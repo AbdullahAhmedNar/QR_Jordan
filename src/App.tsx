@@ -79,22 +79,24 @@ function JordanFlag() {
 function App() {
   return (
     <main
-      className="flex min-h-screen flex-col"
+      className="flex min-h-[100svh] flex-col overflow-hidden"
       style={{ backgroundColor: MAP.pageBg }}
     >
-      <header className="shrink-0 px-3 py-4 text-center sm:px-4 md:py-6">
-        <p className="mx-auto max-w-3xl text-sm leading-loose sm:text-base md:text-lg" style={{ color: MAP.textColor }}>
+      <header className="shrink-0 px-3 py-3 text-center sm:px-4 md:py-5">
+        <p className="mx-auto max-w-4xl text-xl leading-relaxed sm:text-2xl md:text-3xl" style={{ color: MAP.textColor }}>
           ﴿ يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ ﴾
         </p>
       </header>
 
-      <section className="flex min-h-[340px] flex-1 flex-col items-center justify-center gap-8 px-4 py-6 sm:min-h-[420px]">
-        <DeliveryLoader />
+      <section className="flex min-h-0 flex-1 flex-col items-center justify-center gap-4 px-4 py-2 sm:gap-6 sm:py-4">
+        <div className="scale-90 sm:scale-100">
+          <DeliveryLoader />
+        </div>
         <JordanFlag />
       </section>
 
-      <footer className="shrink-0 px-4 py-5 text-center md:py-6">
-        <p className="text-2xl font-bold tracking-widest md:text-3xl" style={{ color: MAP.textColor }}>
+      <footer className="shrink-0 px-4 py-3 text-center sm:py-4 md:py-5">
+        <p className="text-4xl font-bold tracking-wide sm:text-5xl" style={{ color: MAP.textColor }}>
           قريبًا في الأردن
         </p>
       </footer>
